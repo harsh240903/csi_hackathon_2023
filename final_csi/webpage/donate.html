@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>cuRElief</title>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
+   <link rel="stylesheet" href="/public/css/style.css">
+   <link rel="icon" type="image/x-icon" href="/public/images/final.ico">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav>
+    <div class="container">
+      <img src="/public/images/title.png" alt="" width="250px" height="70px">
+    <div class="menu">
+      <a href="/webpage/home.html">Home</a>
+      <a href="/webpage/volunteer.html">Volunteer</a>
+      <a href="/webpage/donate.html">Donate</a>
+      <a href="/webpage/webinar.html">Webinar</a>
+      <a href="/webpage/measure.html">Measures</a>
+    </div>
+
+    <button class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  </nav>
+
+  <script src="/webpage/script.js"></script>
+  <div class="containerd">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="John Doe">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@example.com">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="Mumbai">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="India">
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" placeholder="123 456">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="/public/images/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="John Doe">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="XXXX-XXXX-XXXX-XXXX">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="January">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="XXX">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+        
+
+
+        
+       
+    </form>
+    <div class="containerpop">
+        <button type="submit" class="btn1" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+            <img src="/public/images/tick.png">
+            <h2>Thank You</h2>
+            <p>Thank you for helping! Your donation will help the people who have faced the calamities.<br></p>
+            <button type="button" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</div>   
+<footer>
+    <div class="row primary">
+      <div class="column about">
+        <h3>Connect</h3>
+        <p>
+          <i class="fa fa-map-marker" aria-hidden="true"></i> Made by TCC
+        </p>
+        <div class="social">
+          <i class="fa fa-facebook-square"></i>
+          <i class="fa fa-twitter-square"></i>
+          <i class="fa fa-linkedin-square"></i>
+          <i class="fa fa-instagram"></i>
+        </div>
+      </div>
+
+      <div class="column link">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="webinar.html">Webinar</a></li>
+          <li><a href="measure.html">Measures</a></li>
+        </ul>
+      </div>
+
+      <div class="column subscribe">
+        <h3>Your Location</h3>
+        <div>
+          <input type="email" placeholder="Your Location here" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="row copyright">
+      <div class="footer-menu">
+
+        <a href="">Home</a>
+        <a href="">F.A.Q</a>
+        <a href="">Cookies Policy</a>
+        <a href="">Terms Of Service</a>
+        <a href="">Support</a>
+
+      </div>
+      <p>TCC</p>
+    </div>
+  </footer> 
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script><script  src="script.js"></script>
+
+<!-- Start of ChatBot (www.chatbot.com) code -->
+<script type="text/javascript">
+  window.__be = window.__be || {};
+  window.__be.id = "63c9231a2b5b6400074818f6";
+  (function() {
+      var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+      be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+  })();
+</script>
+<!-- End of ChatBot code -->
+
+</body>
+</html>
